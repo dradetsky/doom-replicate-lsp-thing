@@ -12,3 +12,8 @@
   (remove-hook! 'csharp-mode-local-vars-hook #'lsp)
   (remove-hook! csharp-mode-local-vars #'lsp)
   (remove-hook! csharp-mode-local-vars-hook #'lsp))
+(after! csharp-tree-sitter
+  (remove-hook! 'csharp-mode-local-vars #'lsp)
+  (remove-hook! 'csharp-mode-local-vars-hook #'lsp)
+  (remove-hook! csharp-mode-local-vars #'lsp)
+  (remove-hook! csharp-mode-local-vars-hook #'lsp))
