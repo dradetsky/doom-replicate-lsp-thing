@@ -44,6 +44,8 @@
        (:if (featurep :system 'macos) macos)  ; improve compatibility with macOS
 
        :lang
+       (cc +tree-sitter
+           +lsp)
        (csharp +tree-sitter
                +dotnet
                +lsp)
